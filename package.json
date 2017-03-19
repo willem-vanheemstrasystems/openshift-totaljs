@@ -8,6 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node release.js",
+    "stop" : "pkill total",
     "test": "node test.js"
   },
   "repository": {
