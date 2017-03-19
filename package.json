@@ -1,0 +1,27 @@
+{
+  "name": "openshift-totaljs",
+  "version": "1.0.0",
+  "description": "Empty project for total.js and OpenShift",
+  "main": "release.js",
+  "dependencies": {
+    "total.js": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashvnn/openshift-totaljs.git"
+  },
+  "keywords": [
+    "total",
+    "openshift"
+  ],
+  "author": "Thao Huynh <flashvnn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flashvnn/openshift-totaljs/issues"
+  },
+  "homepage": "https://github.com/flashvnn/openshift-totaljs#readme"
+}
