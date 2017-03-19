@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "PRESTOP APPLICATION"
+TOTAL_JS="total"
+pkill $TOTAL_JS
