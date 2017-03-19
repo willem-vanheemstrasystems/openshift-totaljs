@@ -1,5 +1,6 @@
 # openshift-totaljs
-This is empty project for ready to work with Total.js and Openshift
+This is empty project for ready to work with Total.js and Openshift.
+
 [Demo Site](http://totaljs-fxauto.rhcloud.com/)
 
 ## Install
