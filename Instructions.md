@@ -175,8 +175,40 @@ ___
 
 Click the 'Create' button
 
+___
 
+You will be shown the following:
 
+Completed. Go to overview.
 
+Manage your app
+
+The web console is convenient, but if you need deeper control you may want to try our command line tools.
+
+Command line tools
+
+[Download and install](https://console.preview.openshift.com/console/command-line) the oc command line tool. After that, you can start by logging in, switching to this particular project, and displaying an overview of it, by doing:
+
+```javascript
+oc login https://api.preview.openshift.com
+oc project totaljs-001
+oc status
+```
+
+For more information about the command line tools, check the [CLI Reference](https://docs.openshift.com/online/cli_reference/index.html) and [Basic CLI Operations](https://docs.openshift.com/online/cli_reference/basic_cli_operations.html).
+
+Making code changes
+
+A GitHub [webhook trigger](https://docs.openshift.com/online/dev_guide/builds.html#webhook-triggers) has been created for the totaljs-001-nodejs-4 build config.
+
+You can now set up the webhook in the GitHub repository settings if you own it, in https://github.com/willem-vanheemstrasystems/openshift-totaljs/settings/hooks, using the following payload URL:
+
+```javascript
+https://api.preview.openshift.com/oapi/v1/namespaces/totaljs-001/buildconfigs/totaljs-001-nodejs-4/webhooks/1900155032f5e94c/github
+```
+
+Webhooks allow external services to be notified when certain events happen within your repository. When the specified events happen, we’ll send a POST request to each of the URLs you provide. Learn more in our Webhooks Guide.
+
+***NOTE***: Set the content type of the webhook at Github to 'application/json' (returns 200 - success) instead of 'application/x-www-form-urlencoded' (returns 400 - failed).
 
 
