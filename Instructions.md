@@ -94,10 +94,53 @@ A build configuration describes how to build your deployable image. This include
 [Checked] Launch the first build when the build configuration is created
 
 Environment Variables (Build and Runtime)
+
+Environment variables are used to configure and pass information to running containers. These environment variables will be available during your build and at runtime.
+
 [Optional] ***name***  ***value*** (leave blank for now)
+___
 
 ##Deployment Configuration
 
+Deployment configurations describe how your application is configured by the cluster and under what conditions it should be recreated (e.g. when the image changes).
+
+Autodeply when
+[Checked] New image is available
+[Checked] Deployment configuration changes
+
+Environment Variables (Runtime only)
+
+Environment variables are used to configure and pass information to running containers. These environment variables will only be available at runtime.
+
+These variables exist on the image and will be available at runtime. You may override them below.
+
+***PATH***: /opt/app-root/src/node_modules/.bin/:/opt/app-root/src/.npm-global/bin/:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+***container***: docker
+
+***STI_SCRIPTS_URL***: image:///usr/libexec/s2i
+
+***STI_SCRIPTS_PATH***: /usr/libexec/s2i
+
+***HOME***: /opt/app-root/src
+
+***BASH_ENV***: /opt/app-root/etc/scl_enable
+
+***ENV***: /opt/app-root/etc/scl_enable
+
+***PROMPT_COMMAND***: . /opt/app-root/etc/scl_enable
+
+***NODEJS_VERSION***: 4
+
+***NPM_RUN***: start
+
+***NPM_CONFIG_PREFIX***: /opt/app-root/src/.npm-global
+
+[Optional] ***name***  ***value*** (leave blank for now)
+
+___
+
+##Scaling
 
 
 
