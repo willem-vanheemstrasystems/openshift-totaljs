@@ -52,4 +52,59 @@ Version: 4
 
 ***Git Repository URL***: Give the repository for the nodejs application, here https://github.com/willem-vanheemstrasystems/openshift-totaljs.git
 
+Show advanced routing, build, deployment and source options by clicking the link with the same name.
+
+It will show the following:
+
+***Git Reference***: master
+Optional branch, tag, or commit.
+
+***Context Dir***: /
+Optional subdirectory for the application source code, used as the context directory for the build.
+
+***Source Secret***: Secret name ( we will leave this blank for the moment )
+Secret with credentials for pulling your source code. 
+
+The option to 'Create new secret'. We will not do so now.
+
+##Routing
+
+Routing is a way to make your application publicly visible. Otherwise you may only be able to access your application by its IP address, if allowed by the system administrator.
+
+Create a route to the application
+
+***Hostname***: www.example.com ( We will leave this blank for now )
+Public hostname for the route. If not specified, a hostname is generated. The hostname can't be changed after the route is created.
+
+***Path***: /
+Path that the router watches to route traffic to the service.
+
+***Target Port***: 8080/TCP
+Target port for traffic
+
+[Optional] Secure route (leave unchecked for now)
+routes can be secured using several TLS termination types for serving certificates.
+
+##Build configuration
+
+A build configuration describes how to build your deployable image. This includes your source, the base builder image, and when to launch new builds.
+
+[Checked] Configure a webhook build trigger
+[Checked] Automatically build a new image when the builder image changes
+[Checked] Launch the first build when the build configuration is created
+
+Environment Variables (Build and Runtime)
+[Optional] ***name***  ***value*** (leave blank for now)
+
+##Deployment Configuration
+
+
+
+
+
+
+
+
+
+
 
