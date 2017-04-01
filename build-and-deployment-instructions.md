@@ -211,4 +211,63 @@ Webhooks allow external services to be notified when certain events happen withi
 
 ***NOTE***: Set the content type of the webhook at Github to 'application/json' (returns 200 - success) instead of 'application/x-www-form-urlencoded' (returns 400 - failed).
 
+Click on 'Go to overview.'
+___
+
+#Overview
+
+https://console.preview.openshift.com/console/project/totaljs-001/overview
+
+***NOTE***: When you see a notification like this, choose to add a health check:
+
+totaljs-001-nodejs-4 has containers without health checks, which ensure your application is running correctly. Add health checks.
+
+##Health Checks: totaljs-001-nodejs-4
+
+Container health is periodically checked using readiness and liveness probes.
+
+###Readiness Probe
+
+A readiness probe checks if the container is ready to handle requests. A failed readiness probe means that a container should not receive any traffic from a proxy, even if it's running.
+
+Add a Readiness Probe:
+
+***Type***: HTTP
+
+***Path***: /
+
+***Port***: 8080
+
+***Initial Delay***: 60 seconds
+How long to wait after the container starts before checking its health.
+
+***Timeout***: 60 seconds
+How long to wait for the probe to finish. If the time is exceeded, the probe is considered failed.
+
+###Liveness Probe
+
+A liveness probe checks if the container is still running. If the liveness probe fails, the container is killed.
+
+Add a Liveness Probe
+
+***Type***: HTTP
+
+***Path***: /
+
+***Port***: 8080
+
+***Initial Delay***: 60 seconds
+How long to wait after the container starts before checking its health.
+
+***Timeout***: 60 seconds
+How long to wait for the probe to finish. If the time is exceeded, the probe is considered failed.
+
+Confirm by clicking 'Save'
+___
+
+#Applications
+
+https://console.preview.openshift.com/console/project/totaljs-001/browse/dc/totaljs-001-nodejs-4?tab=details
+
+more ...
 
