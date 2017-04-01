@@ -1,11 +1,12 @@
 #Instructions
 
-##Create an account with Redhat - OpenShift (NextGen)
+##Create an account with Redhat - OpenShift Online (Next Gen)
 
+See for documentation: https://docs.openshift.com/online/welcome/index.html
 
 ##OpenShift Online
 
-Open the OpenShift Console by follwoing this link after having signed in with your OpenShift (NextGen) User Account.
+Open the OpenShift Console by following this link after having signed in with your OpenShift Online (Next Gen) User Account.
 
 https://console.preview.openshift.com/console/
 
