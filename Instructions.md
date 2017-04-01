@@ -33,10 +33,23 @@ You will be given (at least) two options:
 - Node.js  <-- Choose this one
 - Node.js + MongoDB (Persistent)
 
-Choose Node.js ( Build and run Node.js 4 applications on RHEL 7. For more information about using this builder image, including OpenShift considerations, https://github.com/sclorg/s2i-nodejs-container/blob/master/4/README.md ) 
+Choose Node.js ( Builds source code. Build and run Node.js 4 applications on RHEL 7. For more information about using this builder image, including OpenShift considerations, https://github.com/sclorg/s2i-nodejs-container/blob/master/4/README.md ) 
 
 Choose the latest version (i.e. 4 -- latest at the time of this writing).
 
 Confirm by clicking the 'Select' button.
+___
+
+You will be shown the following:
+
+Node.js
+
+Build and run Node.js 4 applications on RHEL 7. For more information about using this builder image, including OpenShift considerations, see https://github.com/sclorg/s2i-nodejs-container/blob/master/4/README.md.
+
+Version: 4
+
+***Name***: Give a name, e.g. totaljs-001-nodejs-4
+
+***Git Repository URL***: Give the repository for the nodejs application, here https://github.com/willem-vanheemstrasystems/openshift-totaljs.git
 
 
