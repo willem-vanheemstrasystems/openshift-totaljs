@@ -142,6 +142,20 @@ ___
 
 ##Scaling
 
+Scaling defines the number of running instances of your built image.
+
+***Strategy***: Manual
+
+Scale replicas manually or automatically based on CPU usage.
+
+***Replicas***: 1
+
+The number of instances of your image.
+
+___
+
+Resource Limits
+
 
 
 
