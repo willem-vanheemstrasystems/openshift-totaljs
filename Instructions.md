@@ -137,7 +137,6 @@ These variables exist on the image and will be available at runtime. You may ove
 ***NPM_CONFIG_PREFIX***: /opt/app-root/src/.npm-global
 
 [Optional] ***name***  ***value*** (leave blank for now)
-
 ___
 
 ##Scaling
@@ -151,14 +150,30 @@ Scale replicas manually or automatically based on CPU usage.
 ***Replicas***: 1
 
 The number of instances of your image.
-
 ___
 
-Resource Limits
+##Resource Limits
 
+Resource limits controle compute resource usage by a container on a node.
 
+***Memory***: 512 MiB (215 MiB min to 1 GiB max)
+The amount of Memory the container is limited to use.
+___
 
+##Labels
 
+Labels are used to organize, group, or select objects and resources, such as pods.
+
+The following labels are being added automatically. If you want to override them, you can do so below.
+
+***app***: totaljs-001-nodejs-4
+
+Each label is applied to each created resource.
+
+[Optional] ***name***  ***value*** (leave blank for now)
+___
+
+Click the 'Create' button
 
 
 
