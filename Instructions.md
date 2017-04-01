@@ -26,3 +26,17 @@ When asked, answer the following questions:
 
 Follow by clicking the 'Create' button
 
+Next, on the 'Browse Catalog' tab, choose from a web framework. Here fill in 'node' in the filter text input field.
+
+You will be given (at least) two options:
+
+- Node.js  <-- Choose this one
+- Node.js + MongoDB (Persistent)
+
+Choose Node.js ( Build and run Node.js 4 applications on RHEL 7. For more information about using this builder image, including OpenShift considerations, https://github.com/sclorg/s2i-nodejs-container/blob/master/4/README.md ) 
+
+Choose the latest version (i.e. 4 -- latest at the time of this writing).
+
+Confirm by clicking the 'Select' button.
+
+
